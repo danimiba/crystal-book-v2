@@ -17,9 +17,41 @@
   --ifm-code-font-size: 95%;
 }
 
+// Custom variables
+$heading-color: var(--ifm-heading-color);
+
+
+// Style overrides
+
 .docusaurus-highlight-code-line {
   background-color: #FFF;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+
+.navbar {
+  height: 96px;
+  padding-top: 0;
+  padding-bottom: 0;
+  & .navbar__link {
+    height: 96px;
+    line-height: 96px;
+    color: $heading-color;
+    padding: 0;
+    margin: 0 15px;
+    border-bottom: 0;
+    &.navbar__link--active {
+      color: $heading-color;
+      border-bottom: 5px solid;
+      border-color: $heading-color;
+    }
+    &:hover {
+      color: $heading-color;
+      background-color: transparent;
+      border-bottom: 5px solid;
+      border-color: $heading-color;
+    }
+  }
 }
