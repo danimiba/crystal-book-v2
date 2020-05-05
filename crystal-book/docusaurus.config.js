@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Site',
+  title: 'Crystal Docs',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -8,17 +8,47 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Crystal Docs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Crystal Lang Logo',
+        src: 'img/crystal.svg',
       },
       links: [
+        {
+          href: 'https://crystal-lang.org',
+          label: 'Home',
+          position: 'right',
+          target: '_self',
+        },
+        {
+          href: 'https://forum.crystal-lang.org',
+          label: 'Forum',
+          position: 'right',
+          target: '_self',
+        },
+        {
+          href: 'https://crystal-lang.org/blog',
+          label: 'Blog',
+          position: 'right',
+          target: '_self',
+        },
+        {
+          href: 'https://crystal-lang.org/sponsors',
+          label: 'Sponsors',
+          position: 'right',
+          target: '_self',
+        },
+        {
+          href: 'https://crystal-lang.org/community',
+          label: 'Community',
+          position: 'right',
+          target: '_self',
+        },
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
+          position: 'right',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -28,53 +58,20 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
+      copyright: `Crystal is licensed under the Apache License, <a href='https://www.apache.org/licenses/LICENSE-2.0'>Version 2.0</a>`,
+      logo: {
+        alt: 'Manas Technology Solutions Logo',
+        src: 'img/manas.svg',
+      },
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          item: {
+            label: `Crystal language, born & raised at Manas <img src='img/manas.svg' alt='Manas Technology Solutions Logo' />`,
+            to: 'docs/doc1',
+          },
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
