@@ -7,6 +7,7 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    // sidebarCollapsible: false,
     navbar: {
       title: 'Crystal Docs',
       logo: {
@@ -45,7 +46,7 @@ module.exports = {
           target: '_self',
         },
         {
-          to: 'docs/doc1',
+          to: 'docs/introduction',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
@@ -83,7 +84,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/danimiba/crystal-book-v2',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
